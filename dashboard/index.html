@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Graveyard Radar — the protocols that will never launch</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="kicker">Token launch radar &middot; snapshot 2026-11-14 &middot; 758 protocols</div>
+  <h1>Graveyard Radar</h1>
+  <p class="tagline">Every other radar ranks the protocols that might launch. This one starts with the ones that almost certainly will not &mdash; and counts what you save by walking past them.</p>
+  <div class="savings" id="savings"></div>
+  <nav class="tabs" id="tabs">
+    <a href="#/graveyard" data-view="graveyard">The Graveyard</a>
+    <a href="#/board" data-view="board">The Board</a>
+    <a href="#/model" data-view="model">The Model</a>
+  </nav>
+</header>
+<main>
+  <section id="view-graveyard" class="view"></section>
+  <section id="view-board" class="view"></section>
+  <section id="view-model" class="view"></section>
+</main>
+<aside id="drawer" class="drawer" hidden></aside>
+<footer class="foot">
+  <p>P(launch) is forward-looking: it is the share of a protocol&rsquo;s cohort that launches after its current age, divided by the share still pre-token at that age, plus a 5% late-launch tail after year 3 &mdash; so an old protocol that has not launched scores as unlikely, not likely. The launch table itself is the cumulative share already tokenized, calibrated by a time split. A protocol on this page records no token; that is not proof it has none.</p>
+  <p id="audit-line"></p>
+</footer>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
